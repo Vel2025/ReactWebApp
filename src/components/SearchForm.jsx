@@ -15,7 +15,7 @@ function SearchForm({ onSearch }) {
         value={city}
         onChange={(e) => setCity(e.target.value)}
         placeholder="Enter city name"
-        className="border rounded p-2 w-64 mb-4"
+        className="border rounded p-2 w-6 mb-4"
       />
       <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
         Search Attractions

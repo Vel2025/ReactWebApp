@@ -76,7 +76,7 @@ function Attractions() {
       <NavBar />
       <div className="container mx-auto p-4">
         <h2 className="text-2xl font-bold mb-4">Attractions in {city}</h2>
-        <SearchForm onSearch={(newCity) => window.location.href = `/attractions?city=${newCity}`} />
+        {/* <SearchForm onSearch={(newCity) => window.location.href = `/attractions?city=${newCity}`} /> */}
         {loading && <p className="text-center">Loading...</p>}
         {error && <p className="text-center text-red-500">{error}</p>}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

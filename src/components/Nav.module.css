@@ -3,6 +3,7 @@
   justify-content: space-between;
   list-style-type: none;
   padding: 0;
+  background-color: rgb(216, 219, 219);
 }
 
 .mainNav > ul > li > a {

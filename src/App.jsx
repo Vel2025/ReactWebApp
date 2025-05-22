@@ -3,6 +3,8 @@ import Home from './pages/Home.jsx';
 import Attractions from './pages/Attractions.jsx';
 import Favorites from './pages/Favorites.jsx';
 
+
+
 function App() {
   return (
     <Routes>
