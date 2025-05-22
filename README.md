@@ -1,12 +1,30 @@
-# React + Vite
+Local Adventure Planner
+Overview
+Local Adventure Planner is a React-based web application that helps users discover tourist attractions in a specified city using the OpenTripMap API. Users can search for attractions, view details, and save their favorites to localStorage for future reference. The app features a responsive design, navigation across three pages, and state management with React hooks.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Technologies Used
+React: For building the user interface and managing components.
+React Router: For client-side routing across Home, Attractions, and Favorites pages.
+JavaScript (ES6): For logic and API integration.
+Tailwind CSS: For styling the application.
+Axios: For making API requests to OpenTripMap.
+localStorage: For persisting favorite attractions in the browser.
+Node.js: For local development and dependency management.
+Approach Taken
+State Management:
+useState: Manages search input and API response data.
+useReducer: Manages the favorites list with actions to add and remove attractions.
+useEffect: Fetches attraction data from the OpenTripMap API when the city changes.
+Routing: Implements three pages (Home, Attractions, Favorites) using react-router-dom.
+API Integration: Fetches city coordinates and attractions using OpenTripMap’s free API. Data is displayed in a grid of reusable AttractionCard components.
+Persistence: Saves favorite attractions to localStorage to persist across sessions.
+Styling: Uses Tailwind CSS for a responsive, modern design with a sticky navigation bar.
+Modularity: Organized into components (NavBar, AttractionCard, SearchForm) and pages (Home, Attractions, Favorites).
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Usage Instructions
+Home Page: Enter a city name (e.g., "New York") in the search bar and click "Search Attractions" to find attractions.
+Attractions Page: View a list of attractions for the searched city. Click "Add to Favorites" to save an attraction.
+Favorites Page: View your saved attractions. Click "Remove from Favorites" to delete an attraction.
+Navigate between pages using the sticky navigation bar at the top.
+Setup and Development
